@@ -21,7 +21,7 @@ public class TranscriptionService {
     }
 
     public String transcribeAudio(MultipartFile file) throws IOException {
-        File tempFile = File.createTempFile("audio-", ".mp3");
+        File tempFile = File.createTempFile("audio-", ".m4a");
 
         try {
             file.transferTo(tempFile);
